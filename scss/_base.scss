@@ -58,6 +58,12 @@ $lineHeight: (
     align-items: center;
 }
 
+@mixin worksize{
+    width: 450px;
+    height: 300px;
+    background-size: cover;
+}
+
 //rwd
 $breakpoint_each: (
     "mobile": 768px,

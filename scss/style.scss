@@ -5,55 +5,55 @@ body {
   @include mx-auto();
 }
 
-header {
-  @include mx-auto();
-  font-family: $title-font;
-  width: 90%;
-  display: flex;
-  justify-content: space-between;
-  padding: 25px 0;
-  left: 5%;
-  a {
-    text-decoration: none;
-  }
-  .logo {
-    font-size: 24px;
-    letter-spacing: -0.5px;
-    color: $primary;
-    font-weight: bold;
-  }
-  .aboutall > a {
-    position: relative;
-    top: 10px;
-    margin-left: 30px;
-    letter-spacing: -0.3px;
-    color: $primary;
-  }
-  .about {
-    color: $primary;
-  }
-  .resume {
-    border-radius: 50%/50%;
-    border: 1px solid $primary;
-    color: $secondary;
-    padding: 10px 20px;
-    &:hover {
-      background-color: $focus;
-    }
-  }
-}
-
 .sectionone {
   min-height: 100vh;
   position: relative;
   margin-bottom: 30px;
+  header {
+    @include mx-auto();
+    font-family: $title-font;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 0;
+    top: 0;
+    left: 5%;
+    a {
+      text-decoration: none;
+    }
+    .logo {
+      font-size: 24px;
+      letter-spacing: -0.5px;
+      color: $primary;
+      font-weight: bold;
+    }
+    .aboutall > a {
+      position: relative;
+      top: 10px;
+      margin-left: 30px;
+      letter-spacing: -0.3px;
+      color: $primary;
+    }
+    .about {
+      color: $primary;
+    }
+    .resume {
+      border-radius: 50%/50%;
+      border: 1px solid $primary;
+      color: $secondary;
+      padding: 10px 20px;
+      &:hover {
+        background-color: $focus;
+      }
+    }
+  }
 
   .intro {
     font-family: $title-font;
     width: 90%;
     position: relative;
     left: 5%;
-    top: 16vh;
+    top: 15vh;
     h1 {
       color: $primary;
       font-weight: bold;
@@ -70,7 +70,6 @@ header {
       a {
         text-decoration: none;
         font-family: $subtitle-font;
-        font-weight: 300;
         border: 1px solid $primary;
         cursor: pointer;
         width: 100px;
@@ -89,15 +88,24 @@ header {
         color: $primary;
       }
     }
+    .photo > img {
+      width: 300px;
+      position: absolute;
+      right: 30%;
+      bottom: -30%;
+      mix-blend-mode: color-burn;
+    }
   }
 
   .skillcontainer {
     text-transform: uppercase;
     display: flex;
+    width: 100%;
     flex-direction: column;
-    // position: absolute;
-    // bottom: 0;
-    margin-top: 18%;
+    position: absolute;
+    bottom: 0;
+    z-index: 999;
+    // margin-top: 18%;
     h2 {
       margin: 0;
       padding: 0 50px;
@@ -109,7 +117,7 @@ header {
       text-transform: uppercase;
       background-color: $primary;
       color: $secondary;
-      width: 100%;
+
       overflow: hidden;
     }
     .design {
@@ -124,7 +132,7 @@ header {
   // min-height: 100vh;
   width: 90%;
   display: block;
-  margin-bottom: 50px;
+
   h2 {
     width: 100%;
     color: $primary;
@@ -146,12 +154,41 @@ header {
     width: 90%;
     text-align: center;
     .work {
+      display: inline-block;
       border: 1px solid $primary;
       border-radius: 5px;
-      width: 450px;
-      height: 330px;
       margin: 25px 20px;
-      display: inline-block;
+      
+      .workcontent1 {
+        background: url(../img/kissa.png) no-repeat;
+        @include worksize();
+      }
+
+      .workcontent2 {
+        background: url(../img/spaced.png) no-repeat;
+        @include worksize();
+      }
+
+      .workcontent3 {
+        background: url(../img/guess.gif) no-repeat;
+        @include worksize();
+      }
+
+      .workcontent4 {
+        background: url(../img/piggame.gif) no-repeat;
+        @include worksize();
+      }
+    }
+    .more > a {
+      color: $secondary;
+      background-color: $primary;
+      padding: 15px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+      font-family: $subtitle-font;
+    }
+    .more {
+      margin: 50px 0 80px 0;
     }
   }
 }
@@ -161,7 +198,7 @@ header {
   min-height: 100vh;
   .content {
     width: 90%;
-    padding-top: 50px;
+    padding-top: 100px;
     .description {
       padding: 20px 0px 120px 0px;
       position: relative;
@@ -202,16 +239,4 @@ header {
       }
     }
   }
-}
-
-.go-top {
-  position: fixed;
-  bottom: 80px;
-  right: 50px;
-  text-decoration: none;
-  color: $secondary;
-  background-color: $focus;
-  font-size: 100px;
-  display: none;
-  border-radius: 50%;
 }

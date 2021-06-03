@@ -41,7 +41,13 @@ body {
   margin: 0 auto;
 }
 
-header {
+.sectionone {
+  min-height: 100vh;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.sectionone header {
   margin: 0 auto;
   font-family: "Space Grotesk", sans-serif;
   width: 90%;
@@ -52,21 +58,22 @@ header {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 25px 0;
+  top: 0;
   left: 5%;
 }
 
-header a {
+.sectionone header a {
   text-decoration: none;
 }
 
-header .logo {
+.sectionone header .logo {
   font-size: 24px;
   letter-spacing: -0.5px;
   color: #121418;
   font-weight: bold;
 }
 
-header .aboutall > a {
+.sectionone header .aboutall > a {
   position: relative;
   top: 10px;
   margin-left: 30px;
@@ -74,25 +81,19 @@ header .aboutall > a {
   color: #121418;
 }
 
-header .about {
+.sectionone header .about {
   color: #121418;
 }
 
-header .resume {
+.sectionone header .resume {
   border-radius: 50%/50%;
   border: 1px solid #121418;
   color: #FBFFFE;
   padding: 10px 20px;
 }
 
-header .resume:hover {
+.sectionone header .resume:hover {
   background-color: #E73D19;
-}
-
-.sectionone {
-  min-height: 100vh;
-  position: relative;
-  margin-bottom: 30px;
 }
 
 .sectionone .intro {
@@ -100,7 +101,7 @@ header .resume:hover {
   width: 90%;
   position: relative;
   left: 5%;
-  top: 16vh;
+  top: 15vh;
 }
 
 .sectionone .intro h1 {
@@ -126,7 +127,6 @@ header .resume:hover {
 .sectionone .intro .btn a {
   text-decoration: none;
   font-family: "Inter", sans-serif;
-  font-weight: 300;
   border: 1px solid #121418;
   cursor: pointer;
   width: 100px;
@@ -147,16 +147,27 @@ header .resume:hover {
   color: #121418;
 }
 
+.sectionone .intro .photo > img {
+  width: 300px;
+  position: absolute;
+  right: 30%;
+  bottom: -30%;
+  mix-blend-mode: color-burn;
+}
+
 .sectionone .skillcontainer {
   text-transform: uppercase;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-top: 18%;
+  position: absolute;
+  bottom: 0;
+  z-index: 999;
 }
 
 .sectionone .skillcontainer h2 {
@@ -171,7 +182,6 @@ header .resume:hover {
   text-transform: uppercase;
   background-color: #121418;
   color: #FBFFFE;
-  width: 100%;
   overflow: hidden;
 }
 
@@ -184,7 +194,6 @@ header .resume:hover {
   margin: 0 auto;
   width: 90%;
   display: block;
-  margin-bottom: 50px;
 }
 
 .sectiontwo h2 {
@@ -213,12 +222,51 @@ header .resume:hover {
 }
 
 .sectiontwo .worklist .work {
+  display: inline-block;
   border: 1px solid #121418;
   border-radius: 5px;
-  width: 450px;
-  height: 330px;
   margin: 25px 20px;
-  display: inline-block;
+}
+
+.sectiontwo .worklist .work .workcontent1 {
+  background: url(../img/kissa.png) no-repeat;
+  width: 450px;
+  height: 300px;
+  background-size: cover;
+}
+
+.sectiontwo .worklist .work .workcontent2 {
+  background: url(../img/spaced.png) no-repeat;
+  width: 450px;
+  height: 300px;
+  background-size: cover;
+}
+
+.sectiontwo .worklist .work .workcontent3 {
+  background: url(../img/guess.gif) no-repeat;
+  width: 450px;
+  height: 300px;
+  background-size: cover;
+}
+
+.sectiontwo .worklist .work .workcontent4 {
+  background: url(../img/piggame.gif) no-repeat;
+  width: 450px;
+  height: 300px;
+  background-size: cover;
+}
+
+.sectiontwo .worklist .more > a {
+  color: #FBFFFE;
+  background-color: #121418;
+  padding: 15px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-family: "Inter", sans-serif;
+}
+
+.sectiontwo .worklist .more {
+  margin: 50px 0 80px 0;
 }
 
 .sectionthree {
@@ -228,7 +276,7 @@ header .resume:hover {
 
 .sectionthree .content {
   width: 90%;
-  padding-top: 50px;
+  padding-top: 100px;
 }
 
 .sectionthree .content .description {
@@ -277,17 +325,5 @@ header .resume:hover {
 .sectionthree .content .description p {
   font-weight: 300;
   color: #C8C8C8;
-}
-
-.go-top {
-  position: fixed;
-  bottom: 80px;
-  right: 50px;
-  text-decoration: none;
-  color: #FBFFFE;
-  background-color: #E73D19;
-  font-size: 100px;
-  display: none;
-  border-radius: 50%;
 }
 /*# sourceMappingURL=style.css.map */
