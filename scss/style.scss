@@ -39,6 +39,9 @@ position: relative;
       border-radius: 50%/50%;
       background-color: $primary;
       color: $secondary;
+      &:hover{
+        background-color: $focus;
+      }
     }
   }
   
@@ -91,8 +94,8 @@ position: relative;
     text-transform: uppercase;
     display: flex;
     flex-direction: column;
-    position: absolute;
-    bottom: 0;
+    // position: absolute;
+    // bottom: 0;
     h2 {
       margin: 0;
       padding: 0 50px;
@@ -116,7 +119,10 @@ position: relative;
 
 .sectiontwo{
   @include mx-auto();
-  display: block;
+ .work{
+    border:5px solid red;
+    width: 100%;
+  }
 }
 
 

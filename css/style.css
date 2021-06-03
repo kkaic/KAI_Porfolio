@@ -89,6 +89,10 @@ body {
   color: #FBFFFE;
 }
 
+.sectionone header .resume:hover {
+  background-color: #E73D19;
+}
+
 .sectionone .intro {
   font-family: "Space Grotesk", sans-serif;
   width: 90%;
@@ -152,8 +156,6 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  position: absolute;
-  bottom: 0;
 }
 
 .sectionone .skillcontainer h2 {
@@ -179,6 +181,10 @@ body {
 
 .sectiontwo {
   margin: 0 auto;
-  display: block;
+}
+
+.sectiontwo .work {
+  border: 5px solid red;
+  width: 100%;
 }
 /*# sourceMappingURL=style.css.map */
