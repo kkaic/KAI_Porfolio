@@ -1,7 +1,14 @@
-$primary:#172121;
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400;1,500&family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap");
+
+$title-font: "Space Grotesk", sans-serif;
+$subtitle-font: "Inter", sans-serif;
+$italic-font: "Playfair Display", serif;
+$primary:#121418;
 $secondary:#FBFFFE;
 $focus: #E73D19;
-$bg: #BAB4AD;
+$minor: #C8C8C8;
+$bg: #e9e6e4;
+
 
 // 字的大小
 $fontScale: (
@@ -30,30 +37,6 @@ $lineHeight: (
         line-height: $v;
     }
 }
-
-// 字型
-@font-face{
-    font-family: "Microsoft Yahei","Montserrat" ,"Julius Sans One",sans-serif;
-    src: local("./fonts/Montserrat-Regular.ttf"),
-         local("./fonts/Montserrat-Regular.ttf"),
-
-}
-
-//間距
-//(以8的倍數 8,16,24,....80)
-//在html加上class (padding/margin)_(top/left)_1,2,3,4)
-@mixin push($num,$dis,$name) {
-    @for $i from 1 through $num {
-        .#{$name}_#{$dis}_#{$i}{
-            #{$name}-#{$dis}: $i * 8px;
-        }
-    }
-}
-
-@include push(10, left, padding);
-@include push(15, top, padding);
-@include push(10, left, margin);
-@include push(15, top, margin);
 
 //margin 左右置中
 @mixin mx-auto(){
