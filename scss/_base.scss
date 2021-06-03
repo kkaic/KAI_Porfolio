@@ -59,9 +59,12 @@ $lineHeight: (
 }
 
 @mixin worksize{
+    border: 1px solid $primary;
+    border-radius: 5px;
     width: 450px;
     height: 300px;
     background-size: cover;
+    position: relative;
 }
 
 //rwd
