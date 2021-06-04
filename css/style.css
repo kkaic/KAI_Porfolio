@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400;1,500&family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap");
 h1, .h1 {
-  font-size: 40px;
+  font-size: 60px;
 }
 
 h2, .h2 {
@@ -28,7 +28,7 @@ small, .small {
 }
 
 .line_low {
-  line-height: 45px;
+  line-height: 32px;
 }
 
 .container {
@@ -38,11 +38,11 @@ small, .small {
 
 body {
   background: #e9e6e4;
+  height: 100%;
   margin: 0 auto;
 }
 
 .sectionone {
-  min-height: 100vh;
   position: relative;
   margin-bottom: 30px;
 }
@@ -78,15 +78,20 @@ body {
   margin-left: 30px;
   letter-spacing: -0.3px;
   color: #121418;
+  font-weight: 500;
 }
 
 .sectionone header .about {
   color: #121418;
 }
 
+.sectionone header .about:hover {
+  text-decoration: underline;
+}
+
 .sectionone header .resume {
   border-radius: 50%/50%;
-  border: 1px solid #121418;
+  border: 2px solid #121418;
   color: #FBFFFE;
   padding: 10px 20px;
 }
@@ -100,7 +105,7 @@ body {
   width: 90%;
   position: relative;
   left: 5%;
-  top: 15vh;
+  margin: 50px 0 80px 0;
 }
 
 .sectionone .intro h1 {
@@ -109,7 +114,12 @@ body {
   margin: 0;
 }
 
+.sectionone .intro h1 .title {
+  line-height: 1.2;
+}
+
 .sectionone .intro h1 .detail {
+  margin-top: 30px;
   font-weight: 300;
 }
 
@@ -128,9 +138,8 @@ body {
   font-family: "Inter", sans-serif;
   border: 1px solid #121418;
   cursor: pointer;
-  width: 100px;
   margin: 30px 30px 0 0;
-  padding: 0 10px;
+  padding: 8px 20px;
   text-align: center;
   border-radius: 5px;
   border: none;
@@ -164,14 +173,15 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  position: absolute;
+  position: relative;
   bottom: 0;
   z-index: 999;
+  font-family: "Space Grotesk", sans-serif;
 }
 
 .sectionone .skillcontainer h2 {
   margin: 0;
-  padding: 0 50px;
+  padding: 0 40px;
   height: 65px;
   line-height: 65px;
   letter-spacing: 2px;
@@ -201,7 +211,7 @@ body {
   text-align: center;
   font-family: "Space Grotesk", sans-serif;
   margin: 0;
-  padding: 10px 0;
+  padding: 20px 0;
 }
 
 .sectiontwo .list {
@@ -222,9 +232,14 @@ body {
 
 .sectiontwo .worklist .work {
   display: inline-block;
-  margin: 25px 20px;
+  margin: 5px 20px 20px;
   overflow: hidden;
   letter-spacing: 1px;
+}
+
+.sectiontwo .worklist .work h4 {
+  font-weight: 400;
+  margin: 10px;
 }
 
 .sectiontwo .worklist .work a.link {
@@ -252,15 +267,17 @@ body {
 .sectiontwo .worklist .work .content-details .details {
   position: relative;
   left: 50%;
-  top: 30%;
-  -webkit-transform: translate(-50%, -30%);
-          transform: translate(-50%, -30%);
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
-.sectiontwo .worklist .work .content-details .details h3, .sectiontwo .worklist .work .content-details .details h4 {
+.sectiontwo .worklist .work .content-details .details h3,
+.sectiontwo .worklist .work .content-details .details h4 {
   color: #FBFFFE;
   font-weight: 300;
   padding: 0 50px;
+  margin: 0;
 }
 
 .sectiontwo .worklist .work .content-details span {
@@ -271,7 +288,7 @@ body {
   padding: 2px 10px;
   font-family: "Inter", sans-serif;
   letter-spacing: -0.5px;
-  margin: 5px;
+  margin: 3px;
   line-height: 30px;
 }
 
@@ -283,76 +300,79 @@ body {
 
 .sectiontwo .worklist .work .workcontent1 {
   background: url(../img/kissa.png) no-repeat;
-  border: 1px solid #121418;
-  border-radius: 5px;
+  border: none;
   width: 450px;
   height: 300px;
   background-size: cover;
   position: relative;
+  overflow: hidden;
 }
 
 .sectiontwo .worklist .work .workcontent2 {
   background: url(../img/spaced.png) no-repeat;
-  border: 1px solid #121418;
-  border-radius: 5px;
+  border: none;
   width: 450px;
   height: 300px;
   background-size: cover;
   position: relative;
+  overflow: hidden;
 }
 
 .sectiontwo .worklist .work .workcontent3 {
   background: url(../img/guess.gif) no-repeat;
-  border: 1px solid #121418;
-  border-radius: 5px;
+  border: none;
   width: 450px;
   height: 300px;
   background-size: cover;
   position: relative;
+  overflow: hidden;
 }
 
 .sectiontwo .worklist .work .workcontent4 {
   background: url(../img/piggame.gif) no-repeat;
-  border: 1px solid #121418;
-  border-radius: 5px;
+  border: none;
   width: 450px;
   height: 300px;
   background-size: cover;
   position: relative;
+  overflow: hidden;
 }
 
 .sectiontwo .worklist .work h3 {
-  margin: 20px 0;
+  margin: 10px 0;
   font-weight: 400;
 }
 
 .sectiontwo .worklist .more > a {
-  color: #FBFFFE;
-  background-color: #121418;
-  padding: 15px 20px;
+  color: #121418;
+  border: 2px solid #121418;
+  padding: 10px 20px;
   text-decoration: none;
-  border-radius: 5px;
   font-family: "Inter", sans-serif;
+  font-weight: 500;
   width: 100%;
   height: 100%;
 }
 
+.sectiontwo .worklist .more > a:hover {
+  background-color: #E73D19;
+}
+
 .sectiontwo .worklist .more {
-  margin: 50px 0 80px 0;
+  margin: 20px 0 80px 0;
 }
 
 .sectionthree {
   background-color: #121418;
-  min-height: 100vh;
 }
 
 .sectionthree .content {
   width: 90%;
-  padding-top: 100px;
+  padding-top: 30px;
 }
 
 .sectionthree .content .description {
-  padding: 20px 0px 120px 0px;
+  padding: 20px;
   position: relative;
   left: 40%;
   width: 55%;
@@ -390,8 +410,13 @@ body {
 }
 
 .sectionthree .content .description .foo .fooo {
-  padding-left: 20px;
-  font-weight: bold;
+  padding-left: 15px;
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.sectionthree .content .description .foo .fooo:hover {
+  color: #E73D19;
 }
 
 .sectionthree .content .description p {

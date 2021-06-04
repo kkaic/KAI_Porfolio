@@ -2,11 +2,12 @@
 
 body {
   background: $bg;
+  height: 100%;
   @include mx-auto();
 }
 
 .sectionone {
-  min-height: 100vh;
+  // min-height: 100vh;
   position: relative;
   margin-bottom: 30px;
   header {
@@ -17,7 +18,7 @@ body {
     justify-content: space-between;
     padding: 25px 0;
     left: 5%;
-    a{
+    a {
       text-decoration: none;
     }
     .logo {
@@ -32,15 +33,20 @@ body {
       margin-left: 30px;
       letter-spacing: -0.3px;
       color: $primary;
+      font-weight: 500;
     }
     .about {
       color: $primary;
+      &:hover{
+        text-decoration: underline;
+      }
     }
     .resume {
       border-radius: 50%/50%;
-      border: 1px solid $primary;
+      border: 2px solid $primary;
       color: $secondary;
       padding: 10px 20px;
+      
       &:hover {
         background-color: $focus;
       }
@@ -52,12 +58,16 @@ body {
     width: 90%;
     position: relative;
     left: 5%;
-    top: 15vh;
+    margin: 50px 0 80px 0;
     h1 {
       color: $primary;
       font-weight: bold;
       margin: 0;
+      .title{
+        line-height: 1.2;
+      }
       .detail {
+        margin-top: 30px;
         font-weight: 300;
         span {
           color: $focus;
@@ -71,9 +81,9 @@ body {
         font-family: $subtitle-font;
         border: 1px solid $primary;
         cursor: pointer;
-        width: 100px;
+        // width: 100px;
         margin: 30px 30px 0 0;
-        padding: 0 10px;
+        padding: 8px 20px;
         text-align: center;
         border-radius: 5px;
         border: none;
@@ -101,13 +111,14 @@ body {
     display: flex;
     width: 100%;
     flex-direction: column;
-    position: absolute;
+    position: relative;
     bottom: 0;
     z-index: 999;
+    font-family: $title-font;
     // margin-top: 18%;
     h2 {
       margin: 0;
-      padding: 0 50px;
+      padding: 0 40px;
       height: 65px;
       line-height: 65px;
       letter-spacing: 2px;
@@ -138,7 +149,7 @@ body {
     text-align: center;
     font-family: $title-font;
     margin: 0;
-    padding: 10px 0;
+    padding: 20px 0;
   }
   .list {
     text-align: center;
@@ -154,9 +165,14 @@ body {
     text-align: center;
     .work {
       display: inline-block;
-      margin: 25px 20px;
+      margin: 5px 20px 20px;
       overflow: hidden;
       letter-spacing: 1px;
+      h4{
+        font-weight: 400;
+        margin: 10px;
+      }
+      // border-radius: 3px;
       a.link {
         display: block;
         height: 100%;
@@ -178,27 +194,29 @@ body {
         -webkit-transition: all 0.3s ease-in-out 0s;
         -moz-transition: all 0.3s ease-in-out 0s;
         transition: all 0.3s ease-in-out 0s;
-        .details{
+        .details {
           position: relative;
           left: 50%;
-    top: 30%;
-    transform: translate(-50%,-30%);
-          h3, h4{
-            color:$secondary;
+          top: 50%;
+          transform: translate(-50%, -50%);
+          h3,
+          h4 {
+            color: $secondary;
             font-weight: 300;
             padding: 0 50px;
+            margin: 0;
           }
         }
-        span{
+        span {
           // background-color: rgba(200, 200, 200, 0.6);
-          color:$minor;
+          color: $minor;
           border: 1px solid $minor;
           border-radius: 2px;
           font-size: 14px;
           padding: 2px 10px;
           font-family: $subtitle-font;
           letter-spacing: -0.5px;
-          margin: 5px;
+          margin: 3px;
           line-height: 30px;
         }
         &:hover {
@@ -228,34 +246,37 @@ body {
       }
 
       h3 {
-        margin: 20px 0;
+        margin: 10px 0;
         font-weight: 400;
       }
     }
     .more > a {
-      color: $secondary;
-      background-color: $primary;
-      padding: 15px 20px;
+      color: $primary;
+      border:2px solid $primary;
+      padding: 10px 20px;
       text-decoration: none;
-      border-radius: 5px;
       font-family: $subtitle-font;
+      font-weight: 500;
       width: 100%;
       height: 100%;
+      &:hover{
+        background-color: $focus;
+      }
     }
     .more {
-      margin: 50px 0 80px 0;
+      margin: 20px 0 80px 0;
     }
   }
 }
 
 .sectionthree {
   background-color: $primary;
-  min-height: 100vh;
+  // min-height: 100vh;
   .content {
     width: 90%;
-    padding-top: 100px;
+    padding-top: 30px;
     .description {
-      padding: 20px 0px 120px 0px;
+      padding: 20px;
       position: relative;
       left: 40%;
       width: 55%;
@@ -284,8 +305,12 @@ body {
         text-align: right;
         margin: 15px 0;
         .fooo {
-          padding-left: 20px;
-          font-weight: bold;
+          padding-left: 15px;
+          font-weight: 500;
+          font-size: 24px;
+          &:hover{
+            color:$focus;
+          }
         }
       }
       p {

@@ -12,7 +12,7 @@ $bg: #e9e6e4;
 
 // 字的大小
 $fontScale: (
-    "h1": 40px,
+    "h1": 60px,
     "h2": 32px,
     "h3": 18px,
     "h4": 16px,
@@ -29,7 +29,7 @@ $fontScale: (
 // 字行距
 $lineHeight: (
     "high": 50px,
-    "low" : 45px,
+    "low" : 32px,
 );
 
 @each $k, $v in $lineHeight{
@@ -59,12 +59,13 @@ $lineHeight: (
 }
 
 @mixin worksize{
-    border: 1px solid $primary;
-    border-radius: 5px;
+    border: none;
+    // border-radius: 10px;
     width: 450px;
     height: 300px;
     background-size: cover;
     position: relative;
+    overflow: hidden;
 }
 
 //rwd
