@@ -58,6 +58,114 @@ $lineHeight: (
     align-items: center;
 }
 
+@mixin header{
+        font-family: $title-font;
+        width: 75%;
+        display: flex;
+        justify-content: space-between;
+        padding: 25px 0;
+        left: 5%;
+        a {
+          text-decoration: none;
+        }
+        .logo {
+          font-size: 24px;
+          letter-spacing: -0.5px;
+          color: $primary;
+          font-weight: bold;
+        }
+        .aboutall > a {
+          position: relative;
+          top: 10px;
+          margin-left: 30px;
+          letter-spacing: -0.3px;
+          color: $primary;
+          font-weight: 500;
+        }
+        .about {
+          color: $primary;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+        .resume {
+          border-radius: 50%/50%;
+          border: 2px solid $primary;
+          color: $secondary;
+          padding: 10px 20px;
+          transition: 0.3s ease;
+          &:hover {
+            background-color: $focus;
+          }
+        }
+      
+}
+
+@mixin footer{
+        background-color: $primary;
+        // min-height: 100vh;
+        .content {
+          width: 90%;
+          padding-top: 30px;
+          .open {
+            position: absolute;
+            animation-name: rotation;
+            animation-duration: 8s;
+            animation-iteration-count: infinite;
+            animation-delay: 2s;
+            padding: 30px 150px;
+          }
+          .description {
+            padding: 20px;
+            position: relative;
+            left: 40%;
+            width: 55%;
+            line-height: 24px;
+            letter-spacing: 0.5px;
+            h2 {
+              color: $secondary;
+              font-family: $title-font;
+            }
+            a {
+              color: $secondary;
+              font-weight: 300;
+              font-family: $title-font;
+              text-decoration: none;
+              &:hover {
+                text-decoration: underline;
+              }
+            }
+            hr {
+              border: 1px solid $secondary;
+            }
+            h4 {
+              color: $secondary;
+              font-weight: 300;
+            }
+            img {
+              width: 23px;
+              padding: 15px 15px 2px 0px;
+            }
+            .foo {
+              text-align: right;
+              margin: 15px 0;
+              .fooo {
+                padding-left: 15px;
+                font-weight: 500;
+                font-size: 24px;
+                &:hover {
+                  color: $focus;
+                }
+              }
+            }
+            p {
+              font-weight: 300;
+              color: $minor;
+            }
+          }
+        } 
+}
+
 @mixin worksize{
     border: none;
     // border-radius: 10px;
