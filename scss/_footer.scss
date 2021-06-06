@@ -13,8 +13,11 @@
         animation-iteration-count: infinite;
         animation-delay: 2s;
         padding: 30px 150px;
+        @include respond(padpro) {
+          padding-left: 100px;
+        }
         @include respond(mobile) {
-          padding: 30px;
+          padding: 50px;
           width:180px;
           height:180px;
         }

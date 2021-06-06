@@ -89,6 +89,7 @@ $breakpoint_each: (
   "mobile-xs": 414px,
     "mobile": 768px,
     "pad": 992px,
+    "padpro": 1024px,
     "desktop": 1200px
 );
 @mixin respond($rwd,$style:all){

@@ -198,9 +198,15 @@ header .about {
   padding: 30px 150px;
 }
 
+@media all and (max-width: 1024px) {
+  .sectionthree .content .open {
+    padding-left: 100px;
+  }
+}
+
 @media all and (max-width: 768px) {
   .sectionthree .content .open {
-    padding: 30px;
+    padding: 50px;
     width: 180px;
     height: 180px;
   }
@@ -348,7 +354,7 @@ main .aboutme {
   text-align: center;
 }
 
-@media all and (max-width: 414px) {
+@media all and (max-width: 768px) {
   main .aboutme {
     margin: 0;
   }
@@ -358,13 +364,31 @@ main .aboutme img {
   width: 300px;
 }
 
+@media all and (max-width: 320px) {
+  main .aboutme img {
+    width: 280px;
+  }
+}
+
 main .aboutme .content {
   width: 35%;
   display: inline-block;
   vertical-align: bottom;
   font-family: "Inter", sans-serif;
-  text-align: justify;
   padding: 0 50px;
+}
+
+@media all and (max-width: 1024px) {
+  main .aboutme .content {
+    width: 43%;
+  }
+}
+
+@media all and (max-width: 768px) {
+  main .aboutme .content {
+    width: 85%;
+    padding: 50px 0;
+  }
 }
 
 @media all and (max-width: 414px) {
@@ -382,6 +406,7 @@ main .aboutme .content h4 {
   font-weight: 300;
   letter-spacing: 0.2px;
   line-height: 26px;
+  text-align: justify;
 }
 
 main .aboutme .content span {
@@ -405,7 +430,7 @@ main .tools ul {
 }
 
 main .tools ul i {
-  padding: 20px;
+  padding: 20px 15px;
   color: #121418;
 }
 
@@ -414,7 +439,7 @@ main .tools ul span {
   font-family: "Inter", sans-serif;
   font-weight: bold;
   padding: 0 10px;
-  letter-spacing: -2px;
+  letter-spacing: -1.5px;
 }
 
 main .quote {

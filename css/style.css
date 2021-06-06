@@ -560,9 +560,15 @@ body {
   padding: 30px 150px;
 }
 
+@media all and (max-width: 1024px) {
+  .sectionthree .content .open {
+    padding-left: 100px;
+  }
+}
+
 @media all and (max-width: 768px) {
   .sectionthree .content .open {
-    padding: 30px;
+    padding: 50px;
     width: 180px;
     height: 180px;
   }
