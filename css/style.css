@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400;1,500&family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400;1,500&family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400;1,500&family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap");
 h1, .h1 {
   font-size: 60px;
 }
@@ -31,9 +33,68 @@ small, .small {
   line-height: 32px;
 }
 
-.container {
-  margin: 0 auto;
-  padding-top: 15vh;
+h1, .h1 {
+  font-size: 60px;
+}
+
+h2, .h2 {
+  font-size: 32px;
+}
+
+h3, .h3 {
+  font-size: 18px;
+}
+
+h4, .h4 {
+  font-size: 16px;
+}
+
+p, .p {
+  font-size: 14px;
+}
+
+small, .small {
+  font-size: 12px;
+}
+
+.line_high {
+  line-height: 50px;
+}
+
+.line_low {
+  line-height: 32px;
+}
+
+h1, .h1 {
+  font-size: 60px;
+}
+
+h2, .h2 {
+  font-size: 32px;
+}
+
+h3, .h3 {
+  font-size: 18px;
+}
+
+h4, .h4 {
+  font-size: 16px;
+}
+
+p, .p {
+  font-size: 14px;
+}
+
+small, .small {
+  font-size: 12px;
+}
+
+.line_high {
+  line-height: 50px;
+}
+
+.line_low {
+  line-height: 32px;
 }
 
 body {
@@ -61,6 +122,12 @@ body {
   left: 5%;
 }
 
+@media all and (max-width: 414px) {
+  .sectionone header {
+    width: 85%;
+  }
+}
+
 .sectionone header a {
   text-decoration: none;
 }
@@ -79,6 +146,14 @@ body {
   letter-spacing: -0.3px;
   color: #121418;
   font-weight: 500;
+}
+
+@media all and (max-width: 414px) {
+  .sectionone header .aboutall > a {
+    display: block;
+    text-align: center;
+    padding-bottom: 5px;
+  }
 }
 
 .sectionone header .about {
@@ -111,10 +186,22 @@ body {
   margin-bottom: 50px;
 }
 
+@media all and (max-width: 414px) {
+  .sectionone .intro {
+    width: 85%;
+  }
+}
+
 .sectionone .intro h1 {
   color: #121418;
   font-weight: bold;
   margin: 0;
+}
+
+@media all and (max-width: 768px) {
+  .sectionone .intro h1 {
+    font-size: 32px;
+  }
 }
 
 .sectionone .intro h1 .title {
@@ -124,6 +211,19 @@ body {
 .sectionone .intro h1 .detail {
   margin-top: 30px;
   font-weight: 300;
+}
+
+@media all and (max-width: 768px) {
+  .sectionone .intro h1 .detail {
+    font-size: 24px;
+  }
+}
+
+@media all and (max-width: 320px) {
+  .sectionone .intro h1 .detail {
+    font-size: 18px;
+    line-height: 24px;
+  }
 }
 
 .sectionone .intro h1 .detail span {
@@ -190,6 +290,14 @@ body {
   letter-spacing: 2px;
 }
 
+@media all and (max-width: 768px) {
+  .sectionone .skillcontainer h2 {
+    font-size: 24px;
+    height: 40px;
+    line-height: 40px;
+  }
+}
+
 .sectionone .skillcontainer .skill {
   text-transform: uppercase;
   background-color: #121418;
@@ -204,7 +312,6 @@ body {
 
 .sectiontwo {
   margin: 0 auto;
-  width: 90%;
   display: block;
 }
 
@@ -231,6 +338,12 @@ body {
   margin: 0 auto;
   width: 90%;
   text-align: center;
+}
+
+@media all and (max-width: 414px) {
+  .sectiontwo .worklist {
+    width: 100%;
+  }
 }
 
 .sectiontwo .worklist .work {
@@ -311,6 +424,20 @@ body {
   overflow: hidden;
 }
 
+@media all and (max-width: 414px) {
+  .sectiontwo .worklist .work .workcontent1 {
+    width: 315px;
+    height: 210px;
+  }
+}
+
+@media all and (max-width: 320px) {
+  .sectiontwo .worklist .work .workcontent1 {
+    width: 270px;
+    height: 180px;
+  }
+}
+
 .sectiontwo .worklist .work .workcontent2 {
   background: url(../img/spaced.png) no-repeat;
   border: none;
@@ -319,6 +446,20 @@ body {
   background-size: cover;
   position: relative;
   overflow: hidden;
+}
+
+@media all and (max-width: 414px) {
+  .sectiontwo .worklist .work .workcontent2 {
+    width: 315px;
+    height: 210px;
+  }
+}
+
+@media all and (max-width: 320px) {
+  .sectiontwo .worklist .work .workcontent2 {
+    width: 270px;
+    height: 180px;
+  }
 }
 
 .sectiontwo .worklist .work .workcontent3 {
@@ -331,6 +472,20 @@ body {
   overflow: hidden;
 }
 
+@media all and (max-width: 414px) {
+  .sectiontwo .worklist .work .workcontent3 {
+    width: 315px;
+    height: 210px;
+  }
+}
+
+@media all and (max-width: 320px) {
+  .sectiontwo .worklist .work .workcontent3 {
+    width: 270px;
+    height: 180px;
+  }
+}
+
 .sectiontwo .worklist .work .workcontent4 {
   background: url(../img/piggame.gif) no-repeat;
   border: none;
@@ -339,6 +494,20 @@ body {
   background-size: cover;
   position: relative;
   overflow: hidden;
+}
+
+@media all and (max-width: 414px) {
+  .sectiontwo .worklist .work .workcontent4 {
+    width: 315px;
+    height: 210px;
+  }
+}
+
+@media all and (max-width: 320px) {
+  .sectiontwo .worklist .work .workcontent4 {
+    width: 270px;
+    height: 180px;
+  }
 }
 
 .sectiontwo .worklist .work h3 {
@@ -389,6 +558,18 @@ body {
   padding: 30px 150px;
 }
 
+@media all and (max-width: 768px) {
+  .sectionthree .content .open {
+    padding: 30px;
+  }
+}
+
+@media all and (max-width: 414px) {
+  .sectionthree .content .open {
+    display: none;
+  }
+}
+
 .sectionthree .content .description {
   padding: 20px;
   position: relative;
@@ -396,6 +577,13 @@ body {
   width: 55%;
   line-height: 24px;
   letter-spacing: 0.5px;
+}
+
+@media all and (max-width: 414px) {
+  .sectionthree .content .description {
+    width: 95%;
+    left: 0%;
+  }
 }
 
 .sectionthree .content .description h2 {

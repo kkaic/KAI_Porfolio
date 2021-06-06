@@ -1,4 +1,7 @@
 @import "_base";
+@import "_header";
+@import "_footer";
+
 
 body {
   background: $bg;
@@ -39,20 +42,29 @@ main {
   @include mx-auto();
   margin-top: 30px;
   margin-bottom: 50px;
-  
+  @include respond(mobile-xs) {
+    width: 85%;
+  }
   .aboutme {
-    margin: 50px 0;
+    margin: 80px 0;
     text-align: center;
+    @include respond(mobile-xs) {
+      margin: 0;
+    }
     img {
-      width: 270px;
+      width: 300px;
     }
     .content {
-      width: 40%;
+      width: 35%;
       display: inline-block;
-      vertical-align: top;
+      vertical-align: bottom;
       font-family: $subtitle-font;
       text-align: justify;
       padding: 0 50px;
+      @include respond(mobile-xs) {
+        width: 90%;
+        padding: 20px 0;
+      }
       h2 {
         margin: 0;
       }
@@ -71,29 +83,23 @@ main {
     h3 {
       @include h3();
     }
-    ul {
-      display: inline-flex;
-      justify-content: space-around;
-      padding-left: 0;
+    ul{
+     text-align: center;
+     @include respond(mobile-xs) {
+      padding: 0;
+    }
       i {
         padding: 20px;
         color: $primary;
       }
       span {
-        font-size: 32px;
+        font-size: 28px;
         font-family: $subtitle-font;
         font-weight: bold;
-        position: relative;
-        top: 38px;
+        // position: relative;
+        // top: 38px;
         padding: 0 10px;
         letter-spacing: -2px;
-      }
-    }
-
-    .tools-img {
-      display: inline-flex;
-      img {
-        width: 100px;
       }
     }
   }
@@ -105,10 +111,16 @@ main {
       font-family: $subtitle-font;
       font-weight: 500;
       letter-spacing: -1px;
+      @include respond(mobile-xs) {
+       font-size: 24px;
+      }
     }
     hr {
       border: 2px solid $primary;
       width: 80%;
+      @include respond(mobile-xs) {
+        width: 100%;
+       }
     }
   }
 }

@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400;1,500&family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400;1,500&family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400;1,500&family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap");
 h1, .h1 {
   font-size: 60px;
 }
@@ -31,9 +33,68 @@ small, .small {
   line-height: 32px;
 }
 
-.container {
-  margin: 0 auto;
-  padding-top: 15vh;
+h1, .h1 {
+  font-size: 60px;
+}
+
+h2, .h2 {
+  font-size: 32px;
+}
+
+h3, .h3 {
+  font-size: 18px;
+}
+
+h4, .h4 {
+  font-size: 16px;
+}
+
+p, .p {
+  font-size: 14px;
+}
+
+small, .small {
+  font-size: 12px;
+}
+
+.line_high {
+  line-height: 50px;
+}
+
+.line_low {
+  line-height: 32px;
+}
+
+h1, .h1 {
+  font-size: 60px;
+}
+
+h2, .h2 {
+  font-size: 32px;
+}
+
+h3, .h3 {
+  font-size: 18px;
+}
+
+h4, .h4 {
+  font-size: 16px;
+}
+
+p, .p {
+  font-size: 14px;
+}
+
+small, .small {
+  font-size: 12px;
+}
+
+.line_high {
+  line-height: 50px;
+}
+
+.line_low {
+  line-height: 32px;
 }
 
 body {
@@ -56,6 +117,12 @@ header {
   left: 5%;
 }
 
+@media all and (max-width: 414px) {
+  header {
+    width: 85%;
+  }
+}
+
 header a {
   text-decoration: none;
 }
@@ -74,6 +141,14 @@ header .aboutall > a {
   letter-spacing: -0.3px;
   color: #121418;
   font-weight: 500;
+}
+
+@media all and (max-width: 414px) {
+  header .aboutall > a {
+    display: block;
+    text-align: center;
+    padding-bottom: 5px;
+  }
 }
 
 header .about {
@@ -123,6 +198,18 @@ header .about {
   padding: 30px 150px;
 }
 
+@media all and (max-width: 768px) {
+  .sectionthree .content .open {
+    padding: 30px;
+  }
+}
+
+@media all and (max-width: 414px) {
+  .sectionthree .content .open {
+    display: none;
+  }
+}
+
 .sectionthree .content .description {
   padding: 20px;
   position: relative;
@@ -130,6 +217,13 @@ header .about {
   width: 55%;
   line-height: 24px;
   letter-spacing: 0.5px;
+}
+
+@media all and (max-width: 414px) {
+  .sectionthree .content .description {
+    width: 95%;
+    left: 0%;
+  }
 }
 
 .sectionthree .content .description h2 {
@@ -235,22 +329,41 @@ main {
   margin-bottom: 50px;
 }
 
+@media all and (max-width: 414px) {
+  main {
+    width: 85%;
+  }
+}
+
 main .aboutme {
-  margin: 50px 0;
+  margin: 80px 0;
   text-align: center;
 }
 
+@media all and (max-width: 414px) {
+  main .aboutme {
+    margin: 0;
+  }
+}
+
 main .aboutme img {
-  width: 270px;
+  width: 300px;
 }
 
 main .aboutme .content {
-  width: 40%;
+  width: 35%;
   display: inline-block;
-  vertical-align: top;
+  vertical-align: bottom;
   font-family: "Inter", sans-serif;
   text-align: justify;
   padding: 0 50px;
+}
+
+@media all and (max-width: 414px) {
+  main .aboutme .content {
+    width: 90%;
+    padding: 20px 0;
+  }
 }
 
 main .aboutme .content h2 {
@@ -274,12 +387,13 @@ main .tools h3 {
 }
 
 main .tools ul {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  padding-left: 0;
+  text-align: center;
+}
+
+@media all and (max-width: 414px) {
+  main .tools ul {
+    padding: 0;
+  }
 }
 
 main .tools ul i {
@@ -288,23 +402,11 @@ main .tools ul i {
 }
 
 main .tools ul span {
-  font-size: 32px;
+  font-size: 28px;
   font-family: "Inter", sans-serif;
   font-weight: bold;
-  position: relative;
-  top: 38px;
   padding: 0 10px;
   letter-spacing: -2px;
-}
-
-main .tools .tools-img {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-}
-
-main .tools .tools-img img {
-  width: 100px;
 }
 
 main .quote {
@@ -321,8 +423,20 @@ main .quote h2 {
   letter-spacing: -1px;
 }
 
+@media all and (max-width: 414px) {
+  main .quote h2 {
+    font-size: 24px;
+  }
+}
+
 main .quote hr {
   border: 2px solid #121418;
   width: 80%;
+}
+
+@media all and (max-width: 414px) {
+  main .quote hr {
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=about.css.map */
