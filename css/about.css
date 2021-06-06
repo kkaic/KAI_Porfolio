@@ -97,6 +97,10 @@ header .resume:hover {
   background-color: #E73D19;
 }
 
+header .about {
+  text-decoration: underline;
+}
+
 .sectionthree {
   background-color: #121418;
 }
@@ -232,19 +236,21 @@ main {
 }
 
 main .aboutme {
-  margin-bottom: 50px;
+  margin: 50px 0;
+  text-align: center;
 }
 
 main .aboutme img {
-  width: 300px;
+  width: 270px;
 }
 
 main .aboutme .content {
-  padding: 70px;
-  padding-bottom: 0;
+  width: 40%;
   display: inline-block;
   vertical-align: top;
   font-family: "Inter", sans-serif;
+  text-align: justify;
+  padding: 0 50px;
 }
 
 main .aboutme .content h2 {
@@ -252,18 +258,43 @@ main .aboutme .content h2 {
 }
 
 main .aboutme .content h4 {
-  font-weight: 400;
-  letter-spacing: 0.5px;
-  line-height: 28px;
+  font-weight: 300;
+  letter-spacing: 0.2px;
+  line-height: 26px;
+}
+
+main .aboutme .content span {
+  font-weight: 500;
 }
 
 main .tools h3 {
   text-align: center;
   margin: 0;
+  padding-top: 50px;
 }
 
-main .tools hr {
-  border: 1px solid #121418;
+main .tools ul {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding-left: 0;
+}
+
+main .tools ul i {
+  padding: 20px;
+  color: #121418;
+}
+
+main .tools ul span {
+  font-size: 32px;
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+  position: relative;
+  top: 38px;
+  padding: 0 10px;
+  letter-spacing: -2px;
 }
 
 main .tools .tools-img {
@@ -274,5 +305,24 @@ main .tools .tools-img {
 
 main .tools .tools-img img {
   width: 100px;
+}
+
+main .quote {
+  text-align: center;
+  margin: 0;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+main .quote h2 {
+  line-height: 45px;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  letter-spacing: -1px;
+}
+
+main .quote hr {
+  border: 2px solid #121418;
+  width: 80%;
 }
 /*# sourceMappingURL=about.css.map */

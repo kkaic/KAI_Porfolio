@@ -176,6 +176,12 @@ $lineHeight: (
     overflow: hidden;
 }
 
+@mixin h3 {
+    text-align: center;
+    margin: 0;
+    padding-top: 50px;
+}
+
 //rwd
 $breakpoint_each: (
     "mobile": 768px,

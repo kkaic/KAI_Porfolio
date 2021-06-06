@@ -9,6 +9,9 @@ body {
 header {
   @include mx-auto();
   @include header();
+  .about {
+    text-decoration: underline;
+  }
 }
 .sectionthree {
   @include footer();
@@ -36,43 +39,76 @@ main {
   @include mx-auto();
   margin-top: 30px;
   margin-bottom: 50px;
-  .aboutme{
-    margin-bottom: 50px;
+  
+  .aboutme {
+    margin: 50px 0;
+    text-align: center;
     img {
-      width: 300px;
+      width: 270px;
     }
     .content {
-      padding: 70px;
-      padding-bottom: 0;
+      width: 40%;
       display: inline-block;
       vertical-align: top;
       font-family: $subtitle-font;
+      text-align: justify;
+      padding: 0 50px;
       h2 {
         margin: 0;
       }
       h4 {
-        font-weight: 400;
-        letter-spacing: 0.5px;
-        line-height: 28px;
+        font-weight: 300;
+        letter-spacing: 0.2px;
+        line-height: 26px;
+      }
+      span{
+        font-weight: 500;
       }
     }
   }
-  .tools{
-    h3{
-      text-align: center;
-      margin: 0;
+
+  .tools {
+    h3 {
+      @include h3();
     }
-    hr {
-      border: 1px solid $primary;
-    }
-    .tools-img{
+    ul {
       display: inline-flex;
-      img{
+      justify-content: space-around;
+      padding-left: 0;
+      i {
+        padding: 20px;
+        color: $primary;
+      }
+      span {
+        font-size: 32px;
+        font-family: $subtitle-font;
+        font-weight: bold;
+        position: relative;
+        top: 38px;
+        padding: 0 10px;
+        letter-spacing: -2px;
+      }
+    }
+
+    .tools-img {
+      display: inline-flex;
+      img {
         width: 100px;
       }
     }
-   
   }
-
-  
+  .quote {
+    @include h3();
+    padding-bottom: 50px;
+    h2 {
+      line-height: 45px;
+      font-family: $subtitle-font;
+      font-weight: 500;
+      letter-spacing: -1px;
+    }
+    hr {
+      border: 2px solid $primary;
+      width: 80%;
+    }
+  }
 }
