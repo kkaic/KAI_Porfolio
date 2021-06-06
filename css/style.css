@@ -356,6 +356,7 @@ body {
 .sectiontwo .worklist .work h4 {
   font-weight: 400;
   margin: 10px;
+  font-family: "Inter", sans-serif;
 }
 
 .sectiontwo .worklist .work a.link {
@@ -382,6 +383,7 @@ body {
 
 .sectiontwo .worklist .work .content-details .details {
   position: relative;
+  font-family: "Inter", sans-serif;
   left: 50%;
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
@@ -609,6 +611,7 @@ body {
 .sectionthree .content .description h4 {
   color: #FBFFFE;
   font-weight: 300;
+  font-family: "Inter", sans-serif;
 }
 
 .sectionthree .content .description img {
