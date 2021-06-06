@@ -201,6 +201,8 @@ header .about {
 @media all and (max-width: 768px) {
   .sectionthree .content .open {
     padding: 30px;
+    width: 180px;
+    height: 180px;
   }
 }
 
@@ -250,6 +252,7 @@ header .about {
   color: #FBFFFE;
   font-weight: 300;
   font-family: "Inter", sans-serif;
+  letter-spacing: 0.3px;
 }
 
 .sectionthree .content .description img {
@@ -260,6 +263,10 @@ header .about {
 .sectionthree .content .description .foo {
   text-align: right;
   margin: 15px 0;
+}
+
+.sectionthree .content .description .foo p {
+  font-family: "Inter", sans-serif;
 }
 
 .sectionthree .content .description .foo .fooo {
