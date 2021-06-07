@@ -557,13 +557,7 @@ body {
           animation-iteration-count: infinite;
   -webkit-animation-delay: 2s;
           animation-delay: 2s;
-  padding: 30px 150px;
-}
-
-@media all and (max-width: 1024px) {
-  .sectionthree .content .open {
-    padding-left: 100px;
-  }
+  padding: 30px 120px;
 }
 
 @media all and (max-width: 768px) {
