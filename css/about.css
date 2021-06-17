@@ -420,6 +420,7 @@ main .aboutme .content .en {
 }
 
 main .aboutme .content .en h4 {
+  font-size: 16px;
   font-weight: 300;
   line-height: 26px;
   text-align: left;
