@@ -356,6 +356,7 @@ main .aboutme {
 
 main .aboutme img {
   width: 300px;
+  vertical-align: top;
 }
 
 @media all and (max-width: 320px) {
@@ -365,9 +366,9 @@ main .aboutme img {
 }
 
 main .aboutme .content {
-  width: 35%;
+  width: 40%;
   display: inline-block;
-  vertical-align: bottom;
+  vertical-align: top;
   font-family: "Inter", sans-serif;
   padding: 0 50px;
 }
@@ -392,15 +393,41 @@ main .aboutme .content {
   }
 }
 
-main .aboutme .content h2 {
-  margin: 0;
+main .aboutme .content .lang {
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 10px;
 }
 
-main .aboutme .content h4 {
+main .aboutme .content .lang a {
+  text-decoration: none;
+  color: #121418;
+}
+
+main .aboutme .content .lang a.active {
+  text-decoration: underline;
+}
+
+main .aboutme .content .ch h4 {
   font-weight: 300;
   letter-spacing: 0.2px;
   line-height: 26px;
   text-align: justify;
+}
+
+main .aboutme .content .en {
+  display: none;
+}
+
+main .aboutme .content .en h4 {
+  font-weight: 300;
+  line-height: 26px;
+  text-align: left;
+  letter-spacing: -0.6px;
+}
+
+main .aboutme .content h2 {
+  margin: 0;
 }
 
 main .aboutme .content span {

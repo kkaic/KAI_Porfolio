@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/about.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script
       src="https://kit.fontawesome.com/f533799947.js"
       crossorigin="anonymous"
@@ -23,27 +24,37 @@
     <main>
       <div class="aboutme">
         <img src="./img/personal.jpg" alt="" />
+
         <div class="content">
+          <div class="lang"><a id="chinese" class="active" href="#ch">中</a>｜<a id="english" href="#en">EN</a></div>
+          <div class="ch">
           <h2>你好，我是KAI。</h2>
           <h4>
-            我是個擁有多元背景的前端工程師，有著商學背景與科技公司專案管理經驗。喜歡科技帶來生活的進步、熱愛設計創造更棒的生活體驗、欣賞商業與科技結合產生的價值，<span>我希望藉由前端技術，解決商業、人們生活問題。</span>
+            我是個具備創造力的前端工程師，有著商學背景與科技公司專案管理經驗。喜歡科技帶來生活的進步、熱愛設計創造更棒的生活體驗、欣賞商業與科技結合產生的價值，我希望藉由前端技術，解決商業、人們生活問題。
             <br />
             <br />
-            我富有想像力，同時樂於實踐。習慣以目標導向組織與思考，致力於解決執行任務時遇到的困難。
+            <span>我富有想像力，同時樂於實踐。習慣以目標導向組織與思考，致力於解決執行任務時遇到的困難。</span>
             <br />
             <br />
             平時我喜歡拍底片、烹飪與觀察身邊的人事物，我享受嘗試所帶來的驚喜感與樂趣，以及想像生活是不是能有點不同。
           </h4>
         </div>
+        <div class="en">
+          <h2>Hi, I’m KAI.</h2>
+          <h4>An creative frontend web developer based in Taiwan. Have an educational background in business  as well as experience in project management. I am currently seeking frontend developer position. 
+          <br>
+          <br>
+          What motivate me for making website is creativity and having the opportunity to interact with new things. I am passionate about digging deeper into front-end development and be able to solve more problems.
+          </h4>
+        </div>
       </div>
       <div class="tools">
-        <h3>使用的工具</h3>
+        <h3>使用的工具 Tools</h3>
         <ul class="icon">
           <i class="fab fa-html5 fa-3x"></i>
           <i class="fab fa-css3-alt fa-3x"></i>
           <i class="fab fa-js fa-3x"></i>
           <span>JQuery</span>
-          <span>D3.js</span>
           <i class="fab fa-sass fa-3x"></i>
           <i class="fab fa-bootstrap fa-3x"></i>
           <span>MySQL</span>
@@ -52,7 +63,7 @@
         </ul>
       </div>
       <div class="quote">
-        <h3>我喜歡的名言</h3>
+        <h3>我喜歡的名言 Favorite Quote </h3>
         <hr>
         <h2>
           “ Planning is everything. The plan is nothing. ” <br>– Dwight D. Eisenhower.
@@ -98,5 +109,7 @@
         </div>
       </div>
     </div>
+
+    <script src="js/changeLang.js"></script>
   </body>
 </html>
