@@ -366,7 +366,7 @@ main .aboutme img {
 }
 
 main .aboutme .content {
-  width: 40%;
+  width: 38%;
   display: inline-block;
   vertical-align: top;
   font-family: "Inter", sans-serif;
@@ -408,6 +408,10 @@ main .aboutme .content .lang a.active {
   text-decoration: underline;
 }
 
+main .aboutme .content .ch {
+  display: none;
+}
+
 main .aboutme .content .ch h4 {
   font-weight: 300;
   letter-spacing: 0.2px;
@@ -415,16 +419,12 @@ main .aboutme .content .ch h4 {
   text-align: justify;
 }
 
-main .aboutme .content .en {
-  display: none;
-}
-
 main .aboutme .content .en h4 {
   font-size: 16px;
   font-weight: 300;
   line-height: 26px;
   text-align: left;
-  letter-spacing: -0.2px;
+  letter-spacing: -0.1px;
 }
 
 main .aboutme .content h2 {

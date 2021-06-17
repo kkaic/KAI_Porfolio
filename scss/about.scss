@@ -58,7 +58,7 @@ main {
       }
     }
     .content {
-      width: 40%;
+      width: 38%;
       display: inline-block;
       vertical-align: top;
       font-family: $subtitle-font;
@@ -87,6 +87,7 @@ main {
         }
       }
       .ch {
+        display: none;
         h4 {
           font-weight: 300;
           letter-spacing: 0.2px;
@@ -95,13 +96,12 @@ main {
         }
       }
       .en {
-        display: none;
         h4 {
           font-size: 16px;
           font-weight: 300;
           line-height: 26px;
           text-align: left;
-          letter-spacing: -0.2px;
+          letter-spacing: -0.1px;
         }
       }
       h2 {
